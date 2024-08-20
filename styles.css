@@ -33,7 +33,7 @@ nav {
 a:hover {
     color: lightskyblue;
     text-decoration: underline;
-    font-size: 51px;
+    font-size: larger;
 }
 a:active {
     color: lightskyblue;
