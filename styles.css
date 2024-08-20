@@ -33,6 +33,10 @@ nav {
 a:hover {
     color: lightskyblue;
     text-decoration: underline;
+    font-size: 34px;
+}
+a:active {
+    color: lightskyblue;
 }
 footer{
     color: #e8eaed;
