@@ -30,10 +30,13 @@ nav {
 .active {
     color: lightgreen;
 }
+a {
+    font-size: 30px;;
+}
 a:hover {
     color: lightskyblue;
     text-decoration: underline;
-    font-size: larger;
+    font-size: 40px;
 }
 a:active {
     color: lightskyblue;
@@ -59,6 +62,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-style: italic;
 }
 .one {
   grid-column: 1;
