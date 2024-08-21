@@ -44,7 +44,7 @@ a:active {
   color: lightskyblue;
   text-decoration: none;
 }
-footer{
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,6 +95,21 @@ footer{
     grid-column: 2;
     grid-row: 3;
   }
+    img {
+    width: 200px;
+    height: auto;
+    float: left;
+    margin: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  .about-body {
+    font-family: "Kameron", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin: 20px 5px 20px 5px;
+  }
 }
 @media screen and (min-width:1291px) {
 /*Desktop*/
@@ -135,5 +150,20 @@ footer{
   .six {
     grid-column: 3;
     grid-row: 2;
+  }
+  img {
+    width: 400px;
+    height: auto;
+    float: left;
+    margin: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  .about-body {
+    font-family: "Kameron", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    margin: 20px 200px 20px 200px;
   }
 }
