@@ -55,39 +55,6 @@ footer {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: sans-serif;
 }
-.contact {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  font-family: "Kameron", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.email {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-}
-.phone {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-}
-.contact #icon {
-  margin: 20px 20px 0px 20px;
-  font-size: 150px;
-}
-.contact h2 {
-  margin: 0px 20px 15px 20px;
-}
-.contact h3 {
-  text-decoration: underline;
-  margin: 15px 20px 0px 20px;
-}
-.contact p {
-  margin: 0px 20px 20px 20px;
-}
 .main {
   display: flex;
   min-height: 100vh;
@@ -135,11 +102,15 @@ footer {
     grid-row: 3;
   }
     img {
-    width: 200px;
+    width: 125px;
     height: auto;
     float: left;
-    margin: 8px;
+    margin-right: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top: #e8eaed 17px solid;
+    border-right: #e8eaed 17px solid;
+    border-left: #e8eaed 17px solid;
+    border-bottom: #e8eaed 50px solid;
     }
   .about-body {
     font-family: "Kameron", serif;
@@ -147,7 +118,59 @@ footer {
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
-    margin: 20px 5px 20px 5px;
+    margin: 250px 5px 20px 5px;
+  }
+  .about-words {
+    font-size: 51px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 125px;
+    text-align: center;
+    right: 0;
+    left: 0;
+  }
+  .contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Kameron", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .email {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 250px;
+  }
+  .phone {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 250px;
+  }
+  .contact #icon {
+    font-size: 200px;
+  }
+  .contact h2 {
+    margin-bottom: 15px;
+  }
+  .contact h3 {
+    text-decoration: underline;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  .contact p {
+    margin-top: 0;
+  }
+  .contact-words {
+    font-size: 51px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 125px;
+    text-align: center;
   }
 }
 @media screen and (min-width:1291px) {
@@ -191,11 +214,15 @@ footer {
     grid-row: 2;
   }
   img {
-    width: 400px;
+    width: 250px;
     height: auto;
     float: left;
-    margin: 8px;
+    margin-right: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top: #e8eaed 17px solid;
+    border-right: #e8eaed 17px solid;
+    border-left: #e8eaed 17px solid;
+    border-bottom: #e8eaed 50px solid;
     }
   .about-body {
     font-family: "Kameron", serif;
@@ -203,6 +230,51 @@ footer {
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
-    margin: 20px 200px 20px 200px;
+    margin: 20px 20px 20px 600px;
+  }
+  .about-words {
+    font-size: 85px;
+    font-family: sans-serif;
+    position: absolute;
+    left: 70px;
+    top: 60px;
+  }
+  .contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Kameron", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .email {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  .phone {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+  .contact #icon {
+    font-size: 200px;
+  }
+  .contact h2 {
+    margin-bottom: 15px;
+  }
+  .contact h3 {
+    text-decoration: underline;
+    margin-top: 15px;
+   margin-bottom: 0;
+  }
+  .contact p {
+    margin-top: 0;
+  }
+  .contact-words {
+    font-size: 85px;
+    font-family: sans-serif;
   }
 }
