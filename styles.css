@@ -1,54 +1,59 @@
 body {
-    background-color: #e8eaed;
+  background-color: #e8eaed;
 }
 .header {
-    color: #e8eaed;
-    background-color: #121212;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #e8eaed;
+  background-color: #121212;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .name {
-    font-family: "Jacquard 12", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    display: flex;
-    justify-content: center;
-    font-size: 68px;
-    margin: 0;
+  font-family: "Jacquard 12", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  font-size: 68px;
+  margin: 0;
 }
 nav {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    font-family: sans-serif;
-    margin: 0;
-    height: 70px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  font-family: sans-serif;
+  margin: 0;
+  height: 70px;
 }
 .nav-hr {
-    margin: 0;
+  margin: 0;
 }
-.active {
-    color: lightgreen;
-    text-decoration: underline;
+.active a {
+  color: lightgreen;
+  text-decoration: underline;
+}
+.unactive a {
+  color: #e8eaed;
+  text-decoration: none;
 }
 a:hover {
-    color: lightskyblue;
-    text-decoration: underline;
+  color: lightskyblue;
+  text-decoration: underline;
 }
 a:active {
-    color: lightskyblue;
+  color: lightskyblue;
+  text-decoration: none;
 }
 footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #e8eaed;
-    background-color: #121212;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e8eaed;
+  background-color: #121212;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: sans-serif;
 }
 @media screen and (max-width:1290px) {
 /*Phone*/
