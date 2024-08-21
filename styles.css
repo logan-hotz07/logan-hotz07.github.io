@@ -101,7 +101,7 @@ footer {
     grid-column: 2;
     grid-row: 3;
   }
-    img {
+  img {
     width: 125px;
     height: auto;
     float: left;
@@ -111,7 +111,7 @@ footer {
     border-right: #e8eaed 17px solid;
     border-left: #e8eaed 17px solid;
     border-bottom: #e8eaed 50px solid;
-    }
+  }
   .about-body {
     font-family: "Kameron", serif;
     font-optical-sizing: auto;
@@ -223,7 +223,7 @@ footer {
     border-right: #e8eaed 17px solid;
     border-left: #e8eaed 17px solid;
     border-bottom: #e8eaed 50px solid;
-    }
+  }
   .about-body {
     font-family: "Kameron", serif;
     font-optical-sizing: auto;
@@ -238,6 +238,7 @@ footer {
     position: absolute;
     left: 70px;
     top: 60px;
+    z-index: -1;
   }
   .contact {
     display: flex;
