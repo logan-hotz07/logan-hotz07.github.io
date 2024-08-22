@@ -30,19 +30,19 @@ nav {
 .nav-hr {
   margin: 0;
 }
-.active a {
+.viewing a {
   color: lightgreen;
   text-decoration: underline;
 }
-.unactive a {
+.not a {
   color: #e8eaed;
   text-decoration: none;
 }
-a:hover {
+h2 a:hover {
   color: lightskyblue;
   text-decoration: underline;
 }
-a:active {
+h2 a:active {
   color: lightskyblue;
   text-decoration: none;
 }
@@ -71,43 +71,79 @@ footer {
 }
 @media screen and (max-width:1290px) {
 /*Phone*/
-  .wrapper {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill);
-    margin: 20px;
+  * {box-sizing:border-box}
+  .slideshow-container {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    font-family: "Kameron", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
-  .wrapper div {
-    border: #121212 2px solid;
-    font-family: serif;
-    aspect-ratio: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .mySlides {
+    display: none;
   }
-  .one {
-    grid-column: 1;
-    grid-row: 1;
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #121212;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
   }
-  .two {
-    grid-column: 2;
-    grid-row: 1;
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
   }
-  .three {
-    grid-column: 1;
-    grid-row: 2;
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: lightgreen;
   }
-  .four {
-    grid-column: 2;
-    grid-row: 2;
+  .text {
+    color: #121212;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    text-align: center;
   }
-  .five {
-    grid-column: 1;
-    grid-row: 3;
+  .numbertext {
+    color: #121212;
+    font-size: 12px;
+    padding: 12px 12px;
+    position: absolute;
+    top: 0;
   }
-  .six {
-    grid-column: 2;
-    grid-row: 3;
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .example {
+    width: 100%;
+    height: 650px;
+    background-color: #bbb;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .dot-container {
+    text-align: center;
+    padding: 25px;
   }
   img {
     width: 125px;
@@ -187,43 +223,79 @@ footer {
 }
 @media screen and (min-width:1291px) {
 /*Desktop*/
-  .wrapper {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill);
-    margin: 20px;
+  * {box-sizing:border-box}
+  .slideshow-container {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    font-family: "Kameron", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
-  .wrapper div {
-    border: #121212 2px solid;
-    font-family: serif;
-    aspect-ratio: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .mySlides {
+    display: none;
   }
-  .one {
-    grid-column: 1;
-    grid-row: 1;
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #121212;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
   }
-  .two {
-    grid-column: 2;
-    grid-row: 1;
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
   }
-  .three {
-    grid-column: 3;
-    grid-row: 1;
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: lightgreen;
   }
-  .four {
-    grid-column: 1;
-    grid-row: 2;
+  .text {
+    color: #121212;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    text-align: center;
   }
-  .five {
-    grid-column: 2;
-    grid-row: 2;
+  .numbertext {
+    color: #121212;
+    font-size: 12px;
+    padding: 12px 12px;
+    position: absolute;
+    top: 0;
   }
-  .six {
-    grid-column: 3;
-    grid-row: 2;
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .example {
+    width: 100%;
+    height: 650px;
+    background-color: #bbb;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .dot-container {
+    text-align: center;
+    padding: 25px;
   }
   img {
     width: 250px;

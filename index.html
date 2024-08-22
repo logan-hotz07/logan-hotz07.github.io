@@ -19,21 +19,55 @@
         <div class="header">
             <h1 class="name">Logan Hotzel</h1>
             <nav>
-                <h2 class="active"><a href="index"><span class="material-symbols-outlined">folder</span>Portfolio</a></h2>
+                <h2 class="viewing"><a href="index"><span class="material-symbols-outlined">folder</span>Portfolio</a></h2>
                 <hr class="nav-hr">
-                <h2 class="unactive"><a href="about"><span class="material-symbols-outlined">person</span>About</a></h2>
+                <h2 class="not"><a href="about"><span class="material-symbols-outlined">person</span>About</a></h2>
                 <hr class="nav-hr">
-                <h2 class="unactive"><a href="contact"><span class="material-symbols-outlined">call</span>Contact</a></h2>
+                <h2 class="not"><a href="contact"><span class="material-symbols-outlined">call</span>Contact</a></h2>
             </nav>
         </div>
         <div class="main">
-            <div class="wrapper">
-                <div class="one"><p><em>Example One</em></p></div>
-                <div class="two"><p><em>Example Two</em></p></div>
-                <div class="three"><p><em>Example Three</em></p></div>
-                <div class="four"><p><em>Example Four</em></p></div>
-                <div class="five"><p><em>Example Five</em></p></div>
-                <div class="six"><p><em>Example Six</em></p></div>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 6</div>
+                    <div class="example"></div>
+                    <div class="text">Example One</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <div class="example"></div>
+                    <div class="text">Example Two</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                    <div class="example"></div>
+                    <div class="text">Example Three</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <div class="example"></div>
+                    <div class="text">Example Four</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 6</div>
+                    <div class="example"></div>
+                    <div class="text">Example Five</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <div class="example"></div>
+                    <div class="text">Example Six</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
             </div>
         </div>
         <footer><p>© 2024 Logan Hotzel. All Rights Reserved.</p></footer>
