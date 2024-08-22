@@ -68,6 +68,7 @@ footer {
 .material-symbols-outlined {
   vertical-align: middle;
   margin-bottom: 2.5px;
+  margin-right: 5px;
 }
 @media screen and (max-width:1290px) {
 /*Phone*/
@@ -185,13 +186,7 @@ footer {
     font-weight: 400;
     font-style: normal;
   }
-  .email {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    margin-top: 250px;
-  }
-  .phone {
+  .contact-card {
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -336,15 +331,11 @@ footer {
     font-weight: 400;
     font-style: normal;
   }
-  .email {
+  .contact-card {
     display: flex;
     flex-flow: column;
     align-items: center;
-  }
-  .phone {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+    margin-top: 250px;
   }
   .contact #icon {
     font-size: 200px;
