@@ -178,7 +178,6 @@ footer {
   }
   .contact {
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
     font-family: "Kameron", serif;
@@ -186,11 +185,13 @@ footer {
     font-weight: 400;
     font-style: normal;
   }
-  .contact-card {
+  .contact-cards {
     display: flex;
     flex-flow: column;
-    align-items: center;
-    margin-top: 250px;
+    margin-top: 260px;
+  }
+  .card {
+    text-align: center;
   }
   .contact #icon {
     font-size: 200px;
@@ -323,7 +324,6 @@ footer {
   }
   .contact {
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
     font-family: "Kameron", serif;
@@ -331,11 +331,15 @@ footer {
     font-weight: 400;
     font-style: normal;
   }
-  .contact-card {
+  .contact-cards {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+  }
+  .card {
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin-top: 250px;
   }
   .contact #icon {
     font-size: 200px;
